@@ -1,59 +1,13 @@
-[[allowlist]]
-description = "False positive: generic-api-key in docs/source/_templates/page.html"
-rules = ["generic-api-key"]
-paths = ["docs/source/_templates/page.html"]
-
-[[allowlist]]
-description = "False positive: generic-api-key in docs/source/_templates/page.html"
-rules = ["generic-api-key"]
-paths = ["docs/source/_templates/page.html"]
-
-[[allowlist]]
-description = "False positive: aws-access-token in notebooks/GE2E-CorentinJ-ExtractSpeakerEmbeddings-by-sample.ipynb"
-rules = ["aws-access-token"]
-paths = ["notebooks/GE2E-CorentinJ-ExtractSpeakerEmbeddings-by-sample.ipynb"]
-
-[[allowlist]]
-description = "False positive: aws-access-token in notebooks/GE2E-CorentinJ-ExtractSpeakerEmbeddings-by-sample.ipynb"
-rules = ["aws-access-token"]
-paths = ["notebooks/GE2E-CorentinJ-ExtractSpeakerEmbeddings-by-sample.ipynb"]
-
-[[allowlist]]
-description = "False positive: aws-access-token in speaker_encoder/notebooks/PlotUmapLibriTTS.ipynb"
-rules = ["aws-access-token"]
-paths = ["speaker_encoder/notebooks/PlotUmapLibriTTS.ipynb"]
-
-[[allowlist]]
-description = "False positive: aws-access-token in speaker_encoder/notebooks/PlotUmapLibriTTS.ipynb"
-rules = ["aws-access-token"]
-paths = ["speaker_encoder/notebooks/PlotUmapLibriTTS.ipynb"]
-
-[[allowlist]]
-description = "False positive: aws-access-token in speaker_encoder/notebooks/PlotUmapLibriTTS.ipynb"
-rules = ["aws-access-token"]
-paths = ["speaker_encoder/notebooks/PlotUmapLibriTTS.ipynb"]
-
-[[allowlist]]
-description = "False positive: aws-access-token in speaker_encoder/notebooks/PlotUmapLibriTTS.ipynb"
-rules = ["aws-access-token"]
-paths = ["speaker_encoder/notebooks/PlotUmapLibriTTS.ipynb"]
-
-[[allowlist]]
-description = "False positive: aws-access-token in speaker_encoder/notebooks/PlotUmapLibriTTS.ipynb"
-rules = ["aws-access-token"]
-paths = ["speaker_encoder/notebooks/PlotUmapLibriTTS.ipynb"]
-
-[[allowlist]]
-description = "False positive: aws-access-token in dataset_analysis/CheckDatasetSNR.ipynb"
-rules = ["aws-access-token"]
-paths = ["dataset_analysis/CheckDatasetSNR.ipynb"]
-
-[[allowlist]]
-description = "False positive: aws-access-token in notebooks/TacotronPlayGround.ipynb"
-rules = ["aws-access-token"]
-paths = ["notebooks/TacotronPlayGround.ipynb"]
-
-[[allowlist]]
-description = "False positive: aws-access-token in notebooks/TacotronPlayGround.ipynb"
-rules = ["aws-access-token"]
-paths = ["notebooks/TacotronPlayGround.ipynb"]
+[allowlist]
+description = "Merged allowlist"
+rules = [
+  "generic-api-key",
+  "aws-access-token"
+]
+paths = [
+  "docs/source/_templates/page.html",
+  "notebooks/GE2E-CorentinJ-ExtractSpeakerEmbeddings-by-sample.ipynb",
+  "speaker_encoder/notebooks/PlotUmapLibriTTS.ipynb",
+  "dataset_analysis/CheckDatasetSNR.ipynb",
+  "notebooks/TacotronPlayGround.ipynb"
+]
